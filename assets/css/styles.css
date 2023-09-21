@@ -1,0 +1,370 @@
+@font-face {
+  font-family: "Monaco";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Monaco"), url("/assets/font/Monaco.woff") format("woff");
+}
+
+
+body {
+  font-family: "Monaco";
+  background-color: #f1efef;
+  color: #f1efef;
+}
+
+.nav-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background-color: #191717;
+  z-index: 100;
+}
+
+.brand > h6 {
+  position: relative;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #f1efef;
+  margin-top: 5px;
+}
+
+.nav-link {
+  color: #f1efef;
+  font-weight: bold;
+}
+
+.hero-section {
+  margin-top: 30%;
+}
+
+.shape-1 {
+  position: absolute;
+  margin-top: 130px;
+  margin-left: 20px;
+  height: 600px;
+  width: 600px;
+  background-color: #f1efef;
+  border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
+  z-index: 1;
+}
+.shape-2 {
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 140px;
+  height: 200px;
+  width: 400px;
+  background-color: #f1efef;
+  border-radius: 53% 57% 73% 27% / 36% 36% 64% 64%;
+  z-index: 4;
+}
+
+.section-1 {
+  position: relative;
+  background-color: #191717;
+  padding: 20px;
+  border: #191717 1px solid;
+}
+.section-2 {
+  position: relative;
+  background-color: #ccc8aa;
+  padding: 20px;
+  border: #191717 1px solid;
+}
+.section-3 {
+  position: relative;
+  background-color: #7d7c7c;
+  padding: 20px;
+  border: #191717 1px solid;
+}
+.section-4 {
+  position: relative;
+  background-color: #191717;
+  border: #191717 1px solid;
+  padding: 20px;
+}
+
+.section-5{
+  position: relative;
+  background-color: #ccc8aa;
+  padding:20px;
+  border: #191717 1px solid;
+  color: #191717;
+}
+.section-6{
+  position: relative;
+  background-color: #7d7c7c;
+  padding:20px;
+  border: #191717 1px solid;
+}
+
+.img-hero {
+  position: relative;
+  margin-top: 20px;
+  width: 600px;
+  z-index: 3;
+}
+
+.hero-section > a {
+  font-weight: 600;
+  color: #f1efef;
+  text-transform: uppercase;
+}
+
+.section-title-3{
+  position: relative;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.section-title-2 {
+  position: relative;
+  font-size: 36px;
+  color: #191717;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.section-title-4{
+  position: relative;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.section-title-5{
+  position: relative;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+}
+.section-title-6{
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.about-me {
+  color: #191717;
+}
+/* Gaya untuk daftar ul dan li */
+.about-me > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-list li {
+  position: relative;
+  padding-left: 20px; /* Jarak ikon dari teks */
+  margin-bottom: 10px; /* Jarak antara setiap item daftar */
+}
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.btn-poto {
+  border-radius: 0px;
+  width: 100%;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.portfolio-overlay h3 {
+  cursor: pointer;
+}
+
+/* Gaya CSS untuk tampilan gambar yang muncul saat di-klik */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  z-index: 999;
+}
+
+.lightbox img {
+  max-height: 80%;
+  max-width: 80%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-overlay:before {
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-service{
+  position: relative;
+  border: #7d7c7c  2px solid;
+}
+
+.card-header{
+  background-color: #fff;
+}
+.card-footer{
+  background-color: #fff;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+}
+/* CSS untuk list skill */
+.list-skill {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Mengubah tata letak menjadi flexbox */
+}
+.fa-brands {
+  font-size: 50px !important;
+}
+.list-skill li {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Menambahkan margin antar list item */
+}
+
+.list-skill li:last-child {
+  margin-right: 0; /* Menghilangkan margin pada list item terakhir */
+}
+
+.list-skill li i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.list-skill li:hover .fa-html5 {
+  color: orange; /* Ganti dengan warna saat hover HTML5 */
+}
+
+.list-skill li:hover .fa-css3-alt {
+  color: #3a5be2; /* Ganti dengan warna saat hover CSS3 */
+}
+
+.list-skill li:hover .fa-square-js {
+  color: yellow; /* Ganti dengan warna saat hover JavaScript */
+}
+
+.list-skill li:hover .fa-php {
+  color: #787cb4; /* Ganti dengan warna saat hover PHP */
+}
+
+.list-skill li:hover .fa-node {
+  color: green; /* Ganti dengan warna saat hover Node.js */
+}
+
+.list-skill li:hover .fa-wordpress {
+  color: #0675c4; /* Ganti dengan warna saat hover WordPress */
+}
+
+.icon-github{
+  width: 20px;
+  background-color: #f1efef;
+}
+
+/* CSS untuk daftar sosial media */
+.social-links {
+  margin: 20px 0;
+}
+
+.social-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links ul li {
+  display: inline-block; /* Menampilkan ikon menyamping */
+  margin-right: 20px; /* Jarak antara ikon */
+}
+
+/* Ubah warna ikon sosial media */
+.social-links a i {
+  color: #f1efef; /* Warna ikon sesuaikan dengan warna sosial media Anda */
+  font-size: 36px;
+  transition: color 0.3s; /* Efek transisi saat hover */
+}
+
+/* Hover efek - Ubah warna ikon dan tampilkan teks */
+.social-links .fa-instagram:hover {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
+.social-links .fa-stack-overflow:hover {
+  color: #F67A00;
+}
+
+.social-links .fa-github:hover {
+  border-radius: 50px;
+  background-color: #f1efef;
+  color: #1a1919;
+}
+
+.social-links .fa-medium:hover {
+  border-radius: 10px;
+  background-color: #f1efef;
+  color: #1a1919;
+}
+
+/* Tampilkan teks saat hover */
+.social-links a:hover::before {
+  content: attr(title);
+  position: absolute;
+  background-color: #333; /* Warna latar belakang tooltip */
+  color: #fff; /* Warna teks tooltip */
+  padding: 5px 10px; /* Padding tooltip */
+  border-radius: 5px; /* Sudut bulat tooltip */
+  z-index: 1;
+  transform: translateX(-50%);
+  /* Sesuaikan jarak vertikal antara tooltip dan ikon */
+  top: 54%;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+}
+
+.social-links a:hover::before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-10px); /* Sesuaikan jarak vertikal dari tooltip */
+}
